@@ -1,17 +1,22 @@
-const display_before = document.getElementById('value_before');
-const display_actual = document.getElementById('value_actual');
-const botton_number = document.querySelectorAll('.number');
-const operator_bottons = document.querySelectorAll('.operator');
 
-const display = new Display(display_before, display_actual);
+class Calculator {
+  sum(num1, num2) {
+    return num1 + num2;
+  }
 
-botton_number.forEach(boton => {
-  boton.addEventListener('click', () => display.addNumber(boton.innerHTML));
-});
+  subtraction(num1, num2) {
+    return num1 - num2;
+  }
 
-operator_bottons.forEach(boton => {
-  boton.addEventListener('click', () => display.computar(boton.value))
-});
+  multiply(num1, num2) {
+    return num1 * num2;
+  }
+
+  divide(num1, num2) {
+    return num1 / num2;
+  }
+
+}
 
 class Display {
   constructor(display_before, display_actual) {
@@ -69,21 +74,19 @@ class Display {
   }
 }
 
-class Calculator {
-  sum(num1, num2) {
-    return num1 + num2;
-  }
 
-  subtraction(num1, num2) {
-    return num1 - num2;
-  }
+const display_before = document.getElementById('value_before');
+const display_actual = document.getElementById('value_actual');
+const botton_number = document.querySelectorAll('.number');
+const operator_bottons = document.querySelectorAll('.operator');
 
-  multiply(num1, num2) {
-    return num1 * num2;
-  }
+const display = new Display(display_before, display_actual);
 
-  divide(num1, num2) {
-    return num1 / num2;
-  }
+botton_number.forEach(boton => {
+  boton.addEventListener('click', () => display.addNumber(boton.innerHTML));
+});
 
-}
+operator_bottons.forEach(boton => {
+  boton.addEventListener('click', () => display.computar(boton.value))
+});
+
