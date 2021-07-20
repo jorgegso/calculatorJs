@@ -8,3 +8,8 @@ const display = new Display(display_before, display_actual);
 botton_number.forEach(boton => {
   boton.addEventListener('click', () => display.addNumber(boton.innerHTML));
 });
+
+operator_bottons.forEach(boton => {
+  boton.addEventListener('click', () => display.computar(boton.value))
+});
+
