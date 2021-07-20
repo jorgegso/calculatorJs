@@ -3,7 +3,7 @@
 Practice project of a small calculator made in html js css, with which you can practice the basic concepts of javascripts and more. Free to reach out if you find any error.
 
 ##How to run the app.
-1. solo tiene que ir al link [in my web](https://jorgegso.github.io/calculatorJs/).
+1. just go to the link [the app](https://jorgegso.github.io/calculatorJs/).
 2. that's it.
 
 or 
