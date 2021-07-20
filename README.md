@@ -1,4 +1,4 @@
-# Portafolio web Developer 
+# Calculator in javascript
 
 Practice project of a small calculator made in html js css, with which you can practice the basic concepts of javascripts and more. Free to reach out if you find any error.
 
