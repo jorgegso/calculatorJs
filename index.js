@@ -1,3 +1,7 @@
+const display_before = document.getElementById('value_before');
+const display_actual = document.getElementById('value_actual');
+const botton_number = document.querySelectorAll('.number');
+const operator_bottons = document.querySelectorAll('.operator');
 
 class Calculator {
   sum(num1, num2) {
@@ -15,7 +19,6 @@ class Calculator {
   divide(num1, num2) {
     return num1 / num2;
   }
-
 }
 
 class Display {
@@ -75,11 +78,6 @@ class Display {
 }
 
 
-const display_before = document.getElementById('value_before');
-const display_actual = document.getElementById('value_actual');
-const botton_number = document.querySelectorAll('.number');
-const operator_bottons = document.querySelectorAll('.operator');
-
 const display = new Display(display_before, display_actual);
 
 botton_number.forEach(boton => {
@@ -87,6 +85,6 @@ botton_number.forEach(boton => {
 });
 
 operator_bottons.forEach(boton => {
-  boton.addEventListener('click', () => display.computar(boton.value))
+  boton.addEventListener('click', () => display.computar(boton.value));
 });
 
